@@ -3,6 +3,7 @@
 <head>
     <title>Your Website Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gotham:400,500,700&display=swap" rel="stylesheet">
     <script src="main.js"></script>
     <style>
         .line {
@@ -10,6 +11,9 @@
             height: 4px;
             background-color: white;
             animation: glowing 2s infinite;
+            position: fixed;
+            bottom: 0;
+            left: 0;
         }
         
         @keyframes glowing {
@@ -21,17 +25,17 @@
 </head>
 <body>
     <header>
-        <h1>Xyrics</h1>
-        <div class="line"></div>
+        <h1 class="logo">Xyrics</h1>
     </header>
 
     <main>
         <div class="center">
-            <h2>Get Script</h2>
             <p>By Clicking This Button You Accept Our Terms Of Service</p>
             <button onclick="window.location.href='https://www.roblox.com'" class="get-script-button">Get Script</button>
         </div>
     </main>
+
+    <div class="line"></div>
 
     <footer>
         <p>&copy; 2023 Your Website. All rights reserved.</p>
