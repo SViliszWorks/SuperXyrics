@@ -80,18 +80,19 @@ footer {
     padding: 10px;
     text-align: center;
     position: fixed;
-    bottom: 10px;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: 2;
+    margin: 0;
 }
 
 .line {
     height: 4px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    right: 0;
     background: linear-gradient(to right, #8e44ad, #3a539b);
     background-size: 200% 100%;
     animation: glowing 4s linear infinite;
