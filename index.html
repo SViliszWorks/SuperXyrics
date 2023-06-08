@@ -12,7 +12,7 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            background: linear-gradient(to right, #8e44ad, #2c3e50);
+            background: linear-gradient(to right, #8e44ad, #3a539b);
             background-size: 200% 100%;
             animation: glowing 4s linear infinite;
             z-index: 1;
@@ -43,20 +43,23 @@
 </head>
 <body>
     <header>
+        <img src="Logo.png" alt="Website Logo">
         <h1 class="logo">Xyrics</h1>
     </header>
 
     <main>
         <div class="center">
             <button onclick="window.location.href='https://www.roblox.com'" class="get-script-button">Get Script</button>
-            <p>By Clicking This Button You Accept Our Terms Of Service</p>
+            <p class="terms">By Clicking This Button You Accept Our Terms Of Service</p>
         </div>
     </main>
 
     <div class="line"></div>
 
     <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <p class="copyright">
+            &copy; 2023 Your Website. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>
