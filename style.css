@@ -19,30 +19,29 @@ header {
 }
 
 header .logo {
-    font-size: 48px;
+    font-size: 60px;
     margin: 0;
-    margin-bottom: 10px;
     margin-left: 30px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header .subtitle {
-    font-size: 24px;
+    font-size: 20px;
     margin: 0;
     margin-left: 30px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 main {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center;
     height: calc(100vh - 120px);
     padding-right: 30px;
 }
 
 button.get-script-button {
-    background-color: #8e44ad;
+    background-color: #444;
     border: none;
     padding: 10px 20px;
     font-size: 18px;
@@ -54,6 +53,7 @@ button.get-script-button {
     font-weight: bold;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
+    width: 180px;
 }
 
 button.get-script-button:hover {
