@@ -5,6 +5,41 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Gotham:400,500,700&display=swap" rel="stylesheet">
     <script src="main.js"></script>
+    <style>
+        .line {
+            height: 4px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to right, #8e44ad, #2c3e50);
+            background-size: 200% 100%;
+            animation: glowing 4s linear infinite;
+            z-index: 1;
+        }
+
+        .line:hover {
+            animation-duration: 2s;
+            background-size: 400% 100%;
+        }
+
+        @keyframes glowing {
+            0% {
+                background-position: 100% 0%;
+                box-shadow: 0 0 5px #8e44ad, 0 0 20px #8e44ad;
+            }
+
+            50% {
+                background-position: 0% 0%;
+                box-shadow: 0 0 20px #8e44ad, 0 0 40px #8e44ad, 0 0 80px #8e44ad;
+            }
+
+            100% {
+                background-position: -100% 0%;
+                box-shadow: 0 0 5px #8e44ad, 0 0 20px #8e44ad;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -17,6 +52,8 @@
             <p>By Clicking This Button You Accept Our Terms Of Service</p>
         </div>
     </main>
+
+    <div class="line"></div>
 
     <footer>
         <p>&copy; 2023 Your Website. All rights reserved.</p>
