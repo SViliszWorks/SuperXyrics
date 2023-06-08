@@ -7,6 +7,7 @@
     <script src="main.js"></script>
     <style>
         .line {
+            display: none;
             height: 4px;
             position: fixed;
             bottom: 0;
@@ -14,42 +15,44 @@
             width: 100%;
             background: linear-gradient(to right, #8e44ad, #3a539b);
             background-size: 200% 100%;
-            animation: glowing 4s linear infinite;
+            animation: glowing 2s linear infinite;
             z-index: 1;
         }
 
         .line:hover {
-            animation-duration: 2s;
+            animation-duration: 1s;
             background-size: 400% 100%;
         }
 
         @keyframes glowing {
             0% {
                 background-position: 100% 0%;
-                box-shadow: 0 0 5px #8e44ad, 0 0 20px #8e44ad;
+                box-shadow: 0 0 5px rgba(142, 68, 173, 0.5), 0 0 20px rgba(142, 68, 173, 0.5);
             }
 
             50% {
                 background-position: 0% 0%;
-                box-shadow: 0 0 20px #8e44ad, 0 0 40px #8e44ad, 0 0 80px #8e44ad;
+                box-shadow: 0 0 20px rgba(142, 68, 173, 0.5), 0 0 40px rgba(142, 68, 173, 0.5), 0 0 80px rgba(142, 68, 173, 0.5);
             }
 
             100% {
                 background-position: -100% 0%;
-                box-shadow: 0 0 5px #8e44ad, 0 0 20px #8e44ad;
+                box-shadow: 0 0 5px rgba(142, 68, 173, 0.5), 0 0 20px rgba(142, 68, 173, 0.5);
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1 class="logo">Xyrics</h1>
-        <p class="subtitle">Walk Like A Ghost Around Them</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1 class="logo">Xyrics</h1>
+            <p class="subtitle">Walk Like A Ghost Around Them</p>
+        </header>
 
-    <main>
-        <button onclick="window.location.href='https://www.roblox.com'" class="get-script-button">Get Script</button>
-    </main>
+        <main>
+            <button onclick="window.location.href='https://www.roblox.com'" class="get-script-button">Get Script</button>
+        </main>
+    </div>
 
     <div class="line"></div>
 
