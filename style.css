@@ -67,3 +67,25 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+/* Blur effect */
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+main,
+footer {
+    position: relative;
+    z-index: 1;
+}
