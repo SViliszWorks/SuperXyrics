@@ -1,6 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(26, 26, 26);
+    font-family: 'Gotham', Arial, sans-serif;
+    background-image: url('Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     margin: 0;
     padding: 0;
 }
@@ -12,41 +15,38 @@ header {
     text-align: center;
 }
 
-header h1 {
+header .logo {
     font-size: 32px;
     margin: 0;
 }
 
 .line {
-    width: 100%;
+    width: 0;
     height: 4px;
     background-color: white;
-    animation: glowing 2s infinite;
+    animation: fillLine 2s infinite;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
-@keyframes glowing {
-    0% { box-shadow: 0 0 5px #fff; }
-    50% { box-shadow: 0 0 20px #fff; }
-    100% { box-shadow: 0 0 5px #fff; }
+@keyframes fillLine {
+    0% { width: 0; }
+    100% { width: 100%; }
 }
 
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 4px);
 }
 
 .center {
     text-align: center;
 }
 
-h2 {
-    font-size: 24px;
-}
-
 p {
-    margin-top: 10px;
     color: #fff;
 }
 
@@ -57,6 +57,17 @@ button.get-script-button {
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.get-script-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+button.get-script-button:active {
+    background-color: #555;
+    color: #fff;
 }
 
 footer {
