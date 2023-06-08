@@ -1,6 +1,6 @@
 body {
     font-family: 'Gotham', Arial, sans-serif;
-    background-image: url('https://example.com/Background.png');
+    background-image: url('Background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -27,7 +27,7 @@ header .logo {
     font-size: 32px;
     margin: 0;
     margin-top: -10px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 main {
@@ -46,7 +46,7 @@ p {
 }
 
 button.get-script-button {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fff;
     border: none;
     padding: 10px 40px;
     font-size: 16px;
@@ -57,16 +57,14 @@ button.get-script-button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     font-family: 'Gotham', Arial, sans-serif;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
 button.get-script-button:hover {
     background-color: #333;
     color: #fff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px); /* For Safari */
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px); /* For Safari */
 }
 
 button.get-script-button:active {
@@ -74,16 +72,18 @@ button.get-script-button:active {
     color: #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     transform: translateY(1px);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
 footer {
-    background-color: #333;
+    background-color: transparent;
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin-top: -20px;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }
 
 .line {
