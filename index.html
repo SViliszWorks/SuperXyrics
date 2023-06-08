@@ -43,23 +43,21 @@
 </head>
 <body>
     <header>
-        <img src="Logo.png" alt="Website Logo">
         <h1 class="logo">Xyrics</h1>
+        <p class="subtitle">Walk Like A Ghost Around Them</p>
     </header>
 
     <main>
-        <div class="center">
-            <button onclick="window.location.href='https://www.roblox.com'" class="get-script-button">Get Script</button>
-            <p class="terms">By Clicking This Button You Accept Our Terms Of Service</p>
-        </div>
+        <button onclick="window.location.href='https://www.roblox.com'" class="get-script-button">Get Script</button>
     </main>
 
     <div class="line"></div>
 
-    <footer>
-        <p class="copyright">
-            &copy; 2023 Your Website. All rights reserved.
-        </p>
-    </footer>
+    <script>
+        window.addEventListener("scroll", function() {
+            const line = document.querySelector(".line");
+            line.style.top = window.pageYOffset + window.innerHeight - 4 + "px";
+        });
+    </script>
 </body>
 </html>
