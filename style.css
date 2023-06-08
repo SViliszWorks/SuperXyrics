@@ -41,8 +41,12 @@ main {
     text-align: center;
 }
 
+p {
+    color: #fff;
+}
+
 button.get-script-button {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     border: none;
     padding: 10px 40px;
     font-size: 16px;
@@ -53,6 +57,8 @@ button.get-script-button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     font-weight: bold;
     font-family: 'Gotham', Arial, sans-serif;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
 button.get-script-button:hover {
@@ -68,14 +74,16 @@ button.get-script-button:active {
     color: #fff;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     transform: translateY(1px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
 
 footer {
-    background-color: transparent;
+    background-color: #333;
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin-top: -40px;
+    margin-top: -20px;
 }
 
 .line {
@@ -102,4 +110,18 @@ footer {
     }
 
     50% {
-        background-position:
+        background-position: 0% 0%;
+        box-shadow: 0 0 20px #8e44ad, 0 0 40px #8e44ad, 0 0 80px #8e44ad;
+    }
+
+    100% {
+        background-position: -100% 0%;
+        box-shadow: 0 0 5px #8e44ad, 0 0 20px #8e44ad;
+    }
+}
+
+footer p {
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
