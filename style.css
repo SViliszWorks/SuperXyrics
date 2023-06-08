@@ -6,8 +6,8 @@ body {
     background-position: center center;
     margin: 0;
     padding: 0;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px); /* For Safari */
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px); /* For Safari */
 }
 
 header {
@@ -17,9 +17,17 @@ header {
     text-align: center;
 }
 
+header img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
 header .logo {
     font-size: 32px;
     margin: 0;
+    margin-top: -10px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -40,14 +48,15 @@ p {
 button.get-script-button {
     background-color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-size: 16px;
     margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-family: 'Gotham', Arial, sans-serif;
 }
 
 button.get-script-button:hover {
@@ -76,7 +85,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(to right, #8e44ad, #2c3e50);
+    background: linear-gradient(to right, #8e44ad, #3a539b);
     background-size: 200% 100%;
     animation: glowing 4s linear infinite;
     z-index: 1;
@@ -102,4 +111,10 @@ footer {
         background-position: -100% 0%;
         box-shadow: 0 0 5px #8e44ad, 0 0 20px #8e44ad;
     }
+}
+
+footer p {
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
