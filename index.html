@@ -4,24 +4,34 @@
     <title>Your Website Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="main.js"></script>
+    <style>
+        .line {
+            width: 100%;
+            height: 4px;
+            background-color: white;
+            animation: glowing 2s infinite;
+        }
+        
+        @keyframes glowing {
+            0% { box-shadow: 0 0 5px #fff; }
+            50% { box-shadow: 0 0 20px #fff; }
+            100% { box-shadow: 0 0 5px #fff; }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Website</h1>
+        <h1>Xyrics</h1>
+        <div class="line"></div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section>
-        <h2>About</h2>
-        <p>This is a sample section. You can add your content here.</p>
-    </section>
+    <main>
+        <div class="center">
+            <h2>Get Script</h2>
+            <p>By Clicking This Button You Accept Our Terms Of Service</p>
+            <button onclick="window.location.href='https://www.roblox.com'" class="get-script-button">Get Script</button>
+        </div>
+    </main>
 
     <footer>
         <p>&copy; 2023 Your Website. All rights reserved.</p>
