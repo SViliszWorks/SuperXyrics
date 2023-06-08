@@ -6,8 +6,8 @@ body {
     background-position: center center;
     margin: 0;
     padding: 0;
-    backdrop-filter: blur(50px);
-    -webkit-backdrop-filter: blur(50px); /* For Safari */
+    backdrop-filter: blur(125px);
+    -webkit-backdrop-filter: blur(125px); /* For Safari */
 }
 
 header {
@@ -21,13 +21,15 @@ header img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 header .logo {
     font-size: 32px;
     margin: 0;
-    margin-top: -10px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    vertical-align: top;
 }
 
 main {
@@ -48,7 +50,7 @@ p {
 button.get-script-button {
     background-color: #fff;
     border: none;
-    padding: 10px 30px;
+    padding: 10px 40px;
     font-size: 16px;
     margin-bottom: 10px;
     cursor: pointer;
@@ -63,6 +65,8 @@ button.get-script-button:hover {
     background-color: #333;
     color: #fff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
 }
 
 button.get-script-button:active {
@@ -73,10 +77,14 @@ button.get-script-button:active {
 }
 
 footer {
-    background-color: #333;
+    background-color: transparent;
     color: #fff;
     padding: 10px;
     text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .line {
